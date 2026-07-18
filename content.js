@@ -17,7 +17,7 @@ const CONTENT = {
   name:     "Disanda Epaladeniya",
   title:    "Final Year Undergraduate Student",
   tagline:  "Strong enthusiast on Digital Hardware Design, FPGA Design and Embedded Systems.",
-  location: "Wennappuwa, Sri Lanks",
+  location: "Wennappuwa, Sri Lanka",
   email:    "disanda63@gmail.com",
   phone:    "+94 7672 42392",          // optional — set to "" to hide
 
@@ -27,22 +27,23 @@ const CONTENT = {
 
   // Optional profile photo. Put a square image in "assets" and set the name,
   // or leave it as "" to show your initials instead.
-  profileImage: "",                        // e.g. "assets/profile.jpg"
+  profileImage: "Photo.jpg",                        // e.g. "assets/profile.jpg"
 
   /* ------------------------------------------------------------ SOCIAL LINKS
      Supported icons: "github", "linkedin", "email", "website", "orcid",
      "twitter". Delete any line you don't need. */
   social: [
-    { label: "GitHub",   url: "https://github.com/yourusername",       icon: "github"   },
-    { label: "LinkedIn", url: "https://linkedin.com/in/yourusername",  icon: "linkedin" },
-    { label: "Email",    url: "mailto:your.email@example.com",         icon: "email"    },
+    { label: "GitHub",   url: "https://github.com/dice-apps",       icon: "github"   },
+    { label: "LinkedIn", url: "www.linkedin.com/in/disanda",  icon: "linkedin" },
+    { label: "Email",    url: "mailto:disanda63@gmail.com",         icon: "email"    },
   ],
 
   /* -------------------------------------------------------------------- ABOUT
      One or more short paragraphs. Add/remove lines as you like. */
   about: [
-    "I'm an electronics and embedded systems engineer with a passion for building hardware that just works. My focus areas are FPGA/digital design (VHDL & Verilog), microcontroller firmware, and mixed-signal PCB design.",
-    "I enjoy taking a project from a blank schematic all the way to a tested, manufacturable board — writing clean RTL, bring-up, debugging with a logic analyzer, and optimising for timing, power and cost.",
+    "I'm a dynamic final year undergraduate student specializing in Electrical and Information Engineering, eager to apply my skills in innovative projects while gaining practical experience.",
+    "I have a strong interest in Digital Electronics, FPGA Design, Embedded Systems Design, Robotics and Signal Processing. I have engaged in projects which are based on Digital Design using HDL, Embedded Systems and Robotics.",
+    "With a solid foundation in problem solving, a collaborative mindset, and a passion for continuous learning, I strive to be a reliable team player and well rounded engineering professional.",
   ],
 
   /* ------------------------------------------------------------- HIGHLIGHTS
@@ -56,34 +57,39 @@ const CONTENT = {
   /* ----------------------------------------------------------------- SKILLS
      Grouped skill chips. Add/remove groups and items freely. */
   skills: [
-    { category: "FPGA / Digital Design", items: ["VHDL", "Verilog", "SystemVerilog", "Vivado", "Quartus", "Timing Closure", "AXI / Wishbone"] },
-    { category: "Embedded / Firmware",   items: ["C", "C++", "ARM Cortex-M", "RTOS", "Bare-metal", "I2C / SPI / UART", "CAN"] },
-    { category: "Hardware / PCB",        items: ["Altium", "KiCad", "Schematic Capture", "Signal Integrity", "Power Design", "DFM"] },
-    { category: "Tools & Methods",       items: ["Git", "Python", "MATLAB", "Oscilloscope", "Logic Analyzer", "Linux"] },
+    { category: "FPGA / Digital Design", items: ["Verilog", "SystemVerilog", "Vivado"] },
+    { category: "Embedded / Firmware",   items: ["C", "C++", "ARM Cortex-M", "Bare-metal", "I2C / SPI / UART"] },
+    { category: "Hardware / PCB",        items: ["Altium", "KiCad", "Schematics"] },
+    /*{ category: "Tech Skills",           items: ["Git", "Python", "ROS"] },*/
+    { category: "Tools & Methods",       items: ["Git", "Python", "MATLAB", "ROS", "Linux"] },
   ],
 
   /* ------------------------------------------------------------- EXPERIENCE
      Your work history, newest first. */
   experience: [
     {
-      role:     "Embedded Systems Engineer",
-      company:  "Company Name",
-      period:   "2023 — Present",
-      location: "City, Country",
+      role:     "Trainee Electronics Engineer",
+      company:  "National Engineering Research & Development Centre (NERDC)",
+      period:   "AUG-2025 — SEP-2025",
+      location: "Ja-Ela, Sri Lanka",
       points: [
-        "Led the FPGA design for a real-time signal-processing module, achieving timing closure at 200 MHz.",
-        "Developed bare-metal and RTOS firmware for ARM Cortex-M microcontrollers used in production devices.",
-        "Designed and brought up multi-layer PCBs, reducing board cost by 18% through component optimisation.",
+        "Designed a driver circuit for a buck converter as part of a Solar Battery Charging System with MPPT.",
+        "Developed and validated circuit schematics and PCB layouts using industry standard EDA tools.",
+        "Gained hands-on experience with STM32 micro-controllers, including peripheral configuration.",
+        "Represented NERDC at the nationally exposed exhibition Industry Expo-2025 and demonstrated projects including the Elephant Fence Energizer",
       ],
     },
     {
-      role:     "Junior Electronics Engineer",
-      company:  "Previous Company",
-      period:   "2021 — 2023",
-      location: "City, Country",
+      role:     "Trainee Telecommunications Engineer",
+      company:  "Sri Lanka Telecom PLC",
+      period:   "JUN-2024 — AUG-2024",
+      location: "Negombo, Sri Lanka",
       points: [
-        "Wrote Verilog RTL and testbenches for peripheral interface controllers.",
-        "Supported hardware bring-up and debugging using oscilloscopes and logic analyzers.",
+        "Gained hands-on experience in telecommunication and networking.",
+        "Had exposure to technologies such as fiber-optic communication, ADSL, and voice communication systems",
+        "Involved in several sections: Maintenance, New-Connection, Networking, Circuit Repair Centre",
+        "Engaged in a circuit design project to test repaired telephones which was capable to optimize the daily routine of the repair centre",
+        "Had the opportunity to have direct involvement in customer and employee interactions",
       ],
     },
   ],
