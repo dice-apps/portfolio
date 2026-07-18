@@ -100,12 +100,44 @@
     ).join("");
   }
 
+  /* -------------------------------------------------------- VOLUNTEERING -- */
+  const volunteering = $("[data-volunteering]");
+  if (volunteering) {
+    if (Array.isArray(C.volunteering) && C.volunteering.length) {
+      volunteering.innerHTML = C.volunteering.map((v) =>
+        '<div class="tl-item">'
+        + '<div class="tl-head"><span class="tl-role">' + esc(v.role) + '</span>'
+        + '<span class="tl-period">' + esc(v.period) + '</span></div>'
+        + '<div class="tl-company">' + esc(v.organization) + '</div>'
+        + (v.location ? '<div class="tl-location">' + esc(v.location) + '</div>' : '')
+        + '<ul class="tl-points">' + (v.points || []).map((p) => '<li>' + esc(p) + '</li>').join("") + '</ul>'
+        + '</div>'
+      ).join("");
+    } else {
+      const empty = $("[data-volunteering-empty]");
+      if (empty) empty.style.display = "block";
+    }
+  }
+
+  // Hide any "View all projects" link when everything already fits on the page.
+  const moreLink = $("[data-projects-more]");
+  const projEl = $("[data-projects]");
+  if (moreLink && projEl) {
+    const lim = parseInt(projEl.getAttribute("data-projects"), 10);
+    if (isNaN(lim) || (C.projects || []).length <= lim) moreLink.style.display = "none";
+  }
+
   /* ------------------------------------------------------------ PROJECTS -- */
   const linkIcon = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>';
   const chipIcon = '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="1"/><path d="M9 3v2M12 3v2M15 3v2M9 19v2M12 19v2M15 19v2M3 9h2M3 12h2M3 15h2M19 9h2M19 12h2M19 15h2"/></svg>';
   const projects = $("[data-projects]");
   if (projects && Array.isArray(C.projects)) {
-    projects.innerHTML = C.projects.map((p) =>
+    // If the container says e.g. data-projects="3", show only the first 3
+    // (used for the "Featured projects" preview on the home page).
+    let projItems = C.projects;
+    const limit = parseInt(projects.getAttribute("data-projects"), 10);
+    if (!isNaN(limit) && limit > 0) projItems = projItems.slice(0, limit);
+    projects.innerHTML = projItems.map((p) =>
       '<div class="project">'
       + '<div class="project__top"><span class="project__icon">' + chipIcon + '</span>'
       + (p.link ? '<a class="project__link" href="' + esc(p.link) + '" target="_blank" rel="noopener" aria-label="Open project">' + linkIcon + '</a>' : '')

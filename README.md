@@ -12,12 +12,30 @@ That is the only file you ever *need* to edit.
 
 | File | What it is | Do you edit it? |
 |------|-----------|-----------------|
-| `content.js`  | **All your details** — name, bio, skills, jobs, projects | ✅ **Yes — edit this** |
+| `content.js`  | **All your details** — name, bio, skills, jobs, projects, volunteering | ✅ **Yes — edit this** |
 | `assets/CV.pdf` | Your downloadable CV (currently a placeholder) | ✅ Replace with your real CV |
 | `assets/` | Folder for your CV and optional profile photo | ✅ Add files here |
-| `index.html` | Page structure | Rarely (e.g. the browser-tab title) |
+| `index.html` | Home page structure | Rarely (e.g. the browser-tab title) |
+| `projects.html` | The full **Projects** page | ❌ No |
+| `volunteering.html` | The full **Volunteering** page | ❌ No |
 | `styles.css` | The design / colours | Only to change the look |
-| `app.js` | Builds the page from `content.js` | ❌ No |
+| `app.js` | Builds every page from `content.js` | ❌ No |
+
+### 🗂️ How the pages fit together
+The site has one home page plus dedicated sub-pages, all sharing the same design:
+
+- **`index.html`** — home: intro, about, skills, experience, a *featured* preview of
+  your 3 top projects, and contact.
+- **`projects.html`** — your full projects list (the `projects:` list in `content.js`).
+- **`volunteering.html`** — your volunteering (the `volunteering:` list in `content.js`).
+
+You still only edit **`content.js`** — the projects and volunteering pages fill
+themselves in automatically. Want a different number of featured projects on the home
+page? In `index.html` find `data-projects="3"` and change the `3`.
+
+**To add another sub-page** (e.g. Publications): make a copy of `volunteering.html`,
+rename it, change its title/heading, add a matching list in `content.js`, and add a
+link to it in the nav of each page. Just ask Claude Code and it'll do it for you.
 
 ---
 

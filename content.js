@@ -127,6 +127,32 @@ const CONTENT = {
     { name: "Certified LabVIEW Associate Developer", issuer: "NI", year: "2022" },
   ],
 
+  /* ---------------------------------------------------------- VOLUNTEERING
+     Shown on its own page (volunteering.html). Add/remove blocks freely.
+     Leave the list empty  ( volunteering: [], )  to hide the whole page. */
+  volunteering: [
+    {
+      role:         "STEM Workshop Mentor",
+      organization: "Local Robotics Club",
+      period:       "2022 — Present",
+      location:     "City, Country",
+      points: [
+        "Teach school students the basics of electronics, Arduino and simple circuit design.",
+        "Mentor a team preparing for regional robotics competitions.",
+      ],
+    },
+    {
+      role:         "Volunteer — Community Repair Café",
+      organization: "Green Tech Initiative",
+      period:       "2021 — 2022",
+      location:     "City, Country",
+      points: [
+        "Diagnosed and repaired household electronics to reduce e-waste.",
+        "Ran monthly sessions helping the public fix their own devices.",
+      ],
+    },
+  ],
+
 };
 
 /* (Leave this line at the very bottom — it makes your details available to the page.) */

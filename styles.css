@@ -164,6 +164,17 @@ img { max-width: 100%; display: block; }
 .contact-card:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-3px); }
 .contact-card svg { color: var(--accent); }
 
+/* -------------------------------------------------- SUB-PAGE HEADER ------ */
+.section__more { display: flex; justify-content: center; margin-top: 2rem; }
+.pagehead { padding: clamp(2.5rem, 6vw, 4rem) 0 1rem; }
+.pagehead .container { max-width: var(--max); }
+.breadcrumb { font-size: .9rem; color: var(--muted); margin-bottom: 1rem; }
+.breadcrumb a { color: var(--accent); font-weight: 500; }
+.breadcrumb a:hover { text-decoration: underline; }
+.pagehead__title { font-size: clamp(2rem, 5vw, 3rem); color: var(--ink); font-weight: 800; letter-spacing: -.03em; margin: .3rem 0 .6rem; }
+.pagehead__lead { font-size: 1.08rem; max-width: 40rem; color: var(--body); }
+.page-empty { display: none; color: var(--muted); font-style: italic; }
+
 /* ----------------------------------------------------------------- FOOTER */
 .footer { border-top: 1px solid var(--line); padding: 1.8rem 0; background: var(--bg); }
 .footer__inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .5rem; font-size: .9rem; color: var(--muted); }

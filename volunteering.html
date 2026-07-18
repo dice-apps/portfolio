@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Volunteering — Your Name</title>
+  <meta name="description" content="Volunteering and community involvement." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💡</text></svg>" />
+</head>
+<body>
+
+  <!-- ============================ NAV ============================ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__brand" data-brand>Your Name</a>
+      <nav class="nav__links" id="navLinks">
+        <a href="index.html#about">About</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="volunteering.html">Volunteering</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="#" class="btn btn--sm" data-cv-link>Download CV</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============================ PAGE HEADER ============================ -->
+    <section class="pagehead">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">← Home</a> &nbsp;/&nbsp; Volunteering</p>
+        <h1 class="pagehead__title">Volunteering</h1>
+        <p class="pagehead__lead">Beyond engineering, I give my time to tech education and community sustainability initiatives.</p>
+      </div>
+    </section>
+
+    <!-- ============================ VOLUNTEERING LIST ============================ -->
+    <section class="section">
+      <div class="container">
+        <div class="timeline" data-volunteering></div>
+        <p class="page-empty" data-volunteering-empty>No volunteering entries yet — add some in content.js.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span data-copyright></span>
+      <a href="#top" class="footer__top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

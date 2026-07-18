@@ -24,8 +24,8 @@
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
+        <a href="projects.html">Projects</a>
+        <a href="volunteering.html">Volunteering</a>
         <a href="#contact">Contact</a>
         <a href="#" class="btn btn--sm" data-cv-link>Download CV</a>
       </nav>
@@ -90,19 +90,36 @@
       </div>
     </section>
 
-    <!-- ============================ PROJECTS ============================ -->
+    <!-- ============================ PROJECTS (preview) ============================ -->
     <section id="projects" class="section section--alt">
       <div class="container">
         <p class="section__kicker">04 — Projects</p>
-        <h2 class="section__title">Selected projects</h2>
-        <div class="projects" data-projects></div>
+        <h2 class="section__title">Featured projects</h2>
+        <!-- data-projects="3" shows only the first 3 projects here as a preview.
+             The full list lives on projects.html. -->
+        <div class="projects" data-projects="3"></div>
+        <div class="section__more">
+          <a href="projects.html" class="btn btn--ghost" data-projects-more>View all projects →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ VOLUNTEERING (preview) ============================ -->
+    <section class="section">
+      <div class="container">
+        <p class="section__kicker">05 — Volunteering</p>
+        <h2 class="section__title">Giving back</h2>
+        <p class="contact__lead" style="margin-left:0;text-align:left">Alongside engineering, I volunteer in tech education and community sustainability.</p>
+        <div class="section__more" style="justify-content:flex-start">
+          <a href="volunteering.html" class="btn btn--ghost">See my volunteering →</a>
+        </div>
       </div>
     </section>
 
     <!-- ============================ EDUCATION ============================ -->
     <section id="education" class="section">
       <div class="container">
-        <p class="section__kicker">05 — Education</p>
+        <p class="section__kicker">06 — Education</p>
         <h2 class="section__title">Education &amp; certifications</h2>
         <div class="edu-grid">
           <div class="timeline" data-education></div>
@@ -114,7 +131,7 @@
     <!-- ============================ CONTACT ============================ -->
     <section id="contact" class="section section--alt">
       <div class="container contact">
-        <p class="section__kicker">06 — Contact</p>
+        <p class="section__kicker">07 — Contact</p>
         <h2 class="section__title">Let's work together</h2>
         <p class="contact__lead">I'm open to new roles and interesting projects. The best way to reach me is below.</p>
         <div class="contact__cards" data-contact></div>
