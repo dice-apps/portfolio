@@ -14,16 +14,16 @@
 const CONTENT = {
 
   /* ---------------------------------------------------------------- BASICS */
-  name:     "Your Full Name",
-  title:    "Embedded Systems & FPGA Engineer",
-  tagline:  "I design reliable electronics, embedded firmware, and FPGA-based digital systems — from schematic to silicon-ready RTL.",
-  location: "Your City, Country",
-  email:    "your.email@example.com",
-  phone:    "+00 000 000 0000",          // optional — set to "" to hide
+  name:     "Disanda Epaladeniya",
+  title:    "Final Year Undergraduate Student",
+  tagline:  "Strong enthusiast on Digital Hardware Design, FPGA Design and Embedded Systems.",
+  location: "Wennappuwa, Sri Lanks",
+  email:    "disanda63@gmail.com",
+  phone:    "+94 7672 42392",          // optional — set to "" to hide
 
   // Your CV file. Put your PDF in the "assets" folder and name it CV.pdf
   // (or change the name here to match your file).
-  cvFile:   "assets/CV.pdf",
+  cvFile:   "assets/Disanda_Epaladeniya_CV.pdf",
 
   // Optional profile photo. Put a square image in "assets" and set the name,
   // or leave it as "" to show your initials instead.
