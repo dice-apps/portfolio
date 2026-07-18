@@ -61,12 +61,23 @@ const CONTENT = {
     { category: "Embedded / Firmware",   items: ["C", "C++", "ARM Cortex-M", "Bare-metal", "I2C / SPI / UART"] },
     { category: "Hardware / PCB",        items: ["Altium", "KiCad", "Schematics"] },
     /*{ category: "Tech Skills",           items: ["Git", "Python", "ROS"] },*/
-    { category: "Tools & Methods",       items: ["Git", "Python", "MATLAB", "ROS", "Linux"] },
+    { category: "Tools & Methods",       items: ["Git", "Python", "MATLAB", "ROS", "ns-3", "Linux"] },
   ],
 
   /* ------------------------------------------------------------- EXPERIENCE
      Your work history, newest first. */
   experience: [
+
+    {
+      role:     "Student Instructor",
+      company:  "Faculty of Engineering, University of Ruhuna",
+      period:   "JAN-2026 — Present",
+      location: "Galle, Sri Lanka",
+      points: [
+        "Conducted laboratory sessions for the module EE2201-Fundamentals of Electroincs for the second semester students.",
+        "Engaged with students in providing technical explanations and logical reasoning",
+      ],
+    },
     {
       role:     "Trainee Electronics Engineer",
       company:  "National Engineering Research & Development Centre (NERDC)",
@@ -120,17 +131,34 @@ const CONTENT = {
   /* -------------------------------------------------------------- EDUCATION */
   education: [
     {
-      degree:      "B.Sc. in Electronics & Communication Engineering",
-      institution: "Your University",
-      period:      "2017 — 2021",
-      detail:      "First Class Honours. Final-year project: FPGA-accelerated image processing.",
+      degree:      "B.Sc. in Electrical & Information Engineering",
+      institution: "University of Ruhuna",
+      period:      "2022 — 2026",
+      detail:      "Second Class Honours (Upper Division). Final-year project: Multi-UAV Simulation Framework using Open Source Tools.",
+    },
+
+    {
+      degree:      "General Certificate of Education - Advanced Level",
+      institution: "St. Joseph Vaz College",
+      period:      "2018 — 2020",
+      detail:      "Year: 2020 , Combined Mathematics: A, Physics: B, Chemistry: A",
+    },
+
+    {
+      degree:      "General Certificate of Education - Ordinary Level",
+      institution: "Loyola College",
+      period:      "2007 — 2017",
+      detail:      "Year: 2017",
     },
   ],
 
   /* ---------------------------------------------------- CERTIFICATIONS (optional)
      Leave the list empty  ( certifications: [], )  to hide this section. */
   certifications: [
-    { name: "Certified LabVIEW Associate Developer", issuer: "NI", year: "2022" },
+    { name: "Learning FPGA Development", issuer: "LinkedIn", year: "2025" },
+    { name: "Learning Verilog for FPGA Development", issuer: "LinkedIn", year: "2025"},
+    { name: "Git: Become an Expert in Git & GitHub", issuer: "Udemy", year: "2026"},
+    
   ],
 
   /* ---------------------------------------------------------- VOLUNTEERING
