@@ -23,7 +23,7 @@ const CONTENT = {
 
   // Your CV file. Put your PDF in the "assets" folder and name it CV.pdf
   // (or change the name here to match your file).
-  cvFile:   "assets/Disanda_Epaladeniya_CV.pdf",
+  cvFile:   "assets/Disanda_Epaladeniya.pdf",
 
   // Optional profile photo. Put a square image in "assets" and set the name,
   // or leave it as "" to show your initials instead.
